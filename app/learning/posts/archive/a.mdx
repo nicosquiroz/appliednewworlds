@@ -1,0 +1,88 @@
+---
+title: 'Tech is Art #1'
+publishedAt: '2024-12-11'
+summary: 'Reflexiones sobre un cortometraje generado con IA, creado en dos días para un concurso. La historia nace de dos textos escritos hace dos años que cobraron nueva vida a través de la tecnología.'
+---
+
+<div 
+  className="flex justify-center my-8 full-bleed"
+  style={{
+    backgroundImage: "url('/images/techisart/clouds.png')",
+    backgroundSize: 'contain',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    width: '100vw',
+  }}
+>
+
+<div className="flex justify-center my-8 full-bleed">
+  <img
+    src="/images/techisart/iterate.png"
+    alt="Circular iterative pattern"
+    className="rotating-image"
+    style={{ 
+      width: '78vw',
+      maxWidth: '800px',
+      height: 'auto',
+      objectFit: 'contain'
+    }}
+  />
+</div>
+</div>
+
+<div className="flex justify-center my-8 full-bleed hidden">
+  <img
+    src="/images/techisart/comunicate.png"
+    alt="Communication visualization"
+    style={{ 
+      width: '48vw',
+      maxWidth: '400px',
+      height: 'auto',
+      objectFit: 'contain',
+      marginTop: '-185px',
+      zIndex: '-1',
+    }}
+  />
+  <div className="absolute !text-3xl left-16 w-full overflow-hidden rotate-43">
+    <div className="scrolling-text">
+      COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE COMUNICATE 
+    </div>
+  </div>
+</div>
+
+<style jsx global>
+  {`
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-360deg);
+      }
+    }
+
+    .rotating-image {
+      animation: rotate 30s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(50%);
+      }
+    }
+
+    .scrolling-text {
+      white-space: nowrap;
+      animation: scroll 20s linear infinite;
+      color: orange;
+      display: inline-block;
+      padding-right: 2rem;
+      visibility: hidden;
+    }
+  `}
+</style>
+
+

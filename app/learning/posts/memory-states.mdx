@@ -1,0 +1,81 @@
+import { HoverVideo } from '../../components/HoverVideo'
+
+---
+title: 'Memory States: Hopfield Networks'
+publishedAt: '2024-12-11'
+summary: 'Explore the enduring debate between using spaces and tabs for code indentation, and why this choice matters more than you might think.'
+---
+
+
+I’ve been inspired by learning about this model of memory in a neural network. I'd never thought about it this way before so I tried to put the concepts together.
+
+In the image of the cat below each neuron is represented by a pixel. We can think of the pattern as spread across all the neurons in the network - the entire image. But the neurons are not isolated, each one communicates with all the others, creating an underlying pattern of these connections (image 3).
+
+<br />
+<br />
+
+<div className="full-bleed">
+<img
+  src="/images/memory1.png"
+  alt="Alt Text"
+  style={{ width: '100%', height: 'auto' }}
+/>
+</div>
+
+<br />
+<br />
+
+## But how are they connected?  
+
+This reminds me of when a teacher separated all our groups of friends in a classroom because we talked too much. When all students were in the new random seats, there was a tension, as if a spring between people was stretched. But eventually, we would slowly start to swap seats so we can regroup, until everyone was happy again.
+
+Suddenly the global order of the classroom was restored, and only through the student's individual connections and preferences for whom to sit with!  
+
+In a similar way, we can store different patterns in this network by finding the right connections between different neurons. So when you have a disordered pattern that increases the tension, a simple nudge towards a recorded one causes all connected neurons to rearrange their values, so the whole network "falls" to a stable point where all the neurons are happy and that pattern is recovered.
+
+## Falling into a stable state
+
+If you provide a noisy cat it will recover the normal cat, and the same for the rabbit and the bird. We can recover a pattern from a partial image, and it is the individual communication between neurons that causes the system to gradually recover its form towards a preferred state where tension is minimal.
+
+<span className="font-bold text-sm">This is a beautiful concept that relates to how physics describes systems: minimization of energy.</span>
+
+In this model, states are recovered through potential energy minimization, and the property of this network system to recover the learned states is what's called associative memory.
+
+<br />
+<br />
+
+<div className="full-bleed">
+<img
+  src="/images/memory2.png"
+  alt="Alt Text"
+  style={{ width: '100%', height: 'auto' }}
+/>
+</div>
+
+<br />
+<br />
+
+
+
+## Universal behavior
+
+When we have more than one memory stored, I imagined that the system as a whole would work like a <HoverVideo word="spring" videoSrc="/images/spring.gif" /> that has more than one preferred state, and it exists!
+
+If you position this mechanism right in the middle, depending on a slight initial inclination, it will fall into one state or the other, because there is a structure that has been built with these two states encoded. 
+
+From what I’ve learned, the capacity to recover a state from a partial one (associative memory) is a fundamental concept in the development of modern neural networks.
+
+Although there's limitations and I know there’s newer methods to recover states that don't rely on energy minimization, I wonder if this principle can be generalized to any system composed of individual elements and these kind of connections between them.
+
+In that sense, could we, to some extent, define a memory behavior in all sorts of systems with more complex situations where the system as a whole naturally falls towards a learned or stable state?
+
+I wonder if this has been used to model collective behaviors of groups of people, or an ecosystem, or maybe economics. Could there be a specific point in time where a slight nudge leads towards a decision? I don't know yet.  
+
+
+juntar párrafos
+
+EDIT:
+
+-> this leads to Predictive Processing! according to this, the brain is a predictive model of the world. a thread comment created this open door
+
+

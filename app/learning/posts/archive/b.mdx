@@ -1,0 +1,108 @@
+---
+title: 'Iterate Iterate Iterate'
+publishedAt: '2024-12-11'
+summary: 'Reflexiones sobre un cortometraje generado con IA, creado en dos días para un concurso. La historia nace de dos textos escritos hace dos años que cobraron nueva vida a través de la tecnología.'
+---
+
+<div className="relative rotating-image">
+<div className="absolute top-0 justify-center my-8 full-bleed">
+  <img
+    src="/images/techisart/iterate.png"
+    alt="Circular iterative pattern"
+    className="rotating-image"
+    style={{ 
+      width: '100vw',
+      maxWidth: '700px',
+      height: 'auto',
+      objectFit: 'contain',
+      pointerEvents: 'none'
+    }}
+  />
+</div>
+
+<div className="absolute justify-center full-bleed">
+  <img
+    src="/images/techisart/iterate.png"
+    alt="Circular iterative pattern"
+    className="rotating-image-2"
+    style={{ 
+      width: '100vw',
+      maxWidth: '850px',
+      height: 'auto',
+      objectFit: 'contain',
+      marginTop: '-130vh',
+      pointerEvents: 'none'
+    }}
+  />
+</div>
+<div className="absolute justify-center full-bleed">
+  <img
+    src="/images/techisart/iterate.png"
+    alt="Circular iterative pattern"
+    className="rotating-image"
+    style={{ 
+      width: '100vw',
+      maxWidth: '950px',
+      height: 'auto',
+      objectFit: 'contain',
+      marginTop: '-150vh',
+      pointerEvents: 'none'
+    }}
+  />
+</div>
+<div className="absolute justify-center full-bleed">
+  <img
+    src="/images/techisart/iterate.png"
+    alt="Circular iterative pattern"
+    className="rotating-image-2" 
+    style={{ 
+      width: '100vw',
+      maxWidth: '1500px',
+      height: 'auto',
+      objectFit: 'contain',
+      marginTop: '-140vh',
+      pointerEvents: 'none'
+    }}
+  />
+</div>
+
+</div>
+
+<style jsx global>
+  {`
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-360deg);
+      }
+    }
+
+    .rotating-image {
+      animation: rotate 30s linear infinite;
+    }
+    .rotating-image-2 {
+      animation: rotate 20s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(50%);
+      }
+    }
+
+    .scrolling-text {
+      white-space: nowrap;
+      animation: scroll 20s linear infinite;
+      color: orange;
+      display: inline-block;
+      padding-right: 2rem;
+    }
+  `}
+</style>
+
+
