@@ -27,7 +27,7 @@ export default function CustomLayout() {
     <html lang="en" className="bg-[#f5f5f5]">
       <body className="min-h-screen bg-[#f5f5f5]">
         <header className="flex flex-col items-center pt-10">
-            <p className="absolute left-4 text-left text-l font-medium text-[#676767] font-[Helvetica_Neue,_Helvetica,_Arial,_sans-serif] tracking-[-.04em] leading-[.876]">APPLIED NEW WORLDS</p>
+            {/* <p className="absolute left-4 text-left text-l font-medium text-[#676767] font-[Helvetica_Neue,_Helvetica,_Arial,_sans-serif] tracking-[-.04em] leading-[.876]">APPLIED NEW WORLDS</p> */}
           <p className="text-l font-medium text-[#676767] mb-1 font-[Helvetica_Neue,_Helvetica,_Arial,_sans-serif] tracking-[-.04em] leading-[.876]">
             VIÑA DEL MAR 
             <span className="font-light"> CL</span>
