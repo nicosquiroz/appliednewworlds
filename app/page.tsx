@@ -36,7 +36,7 @@ export default function CustomLayout() {
         </header>
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-0 bg-[#f5f5f5]">
           {/* Hero/Header Section */}
-          <section className="flex flex-col items-center mx-10">
+          <section className="flex flex-col items-center mx-[1%]">
           {/* h-[90vh]  */}
           {/* <h1 className="mt-20 flex flex-col text-8xl font-medium font-[Helvetica_Neue] text-[#FF5C00] mr-3 text-left tracking-[-.03em] leading-[.876]">
               APPLIED <br></br>NEW <br></br> WORLDS
