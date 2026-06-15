@@ -1,67 +1,97 @@
-'use client'
-import { useEffect, useState } from 'react'
 import Clock from './components/Clock'
-import { IBM_Plex_Sans } from 'next/font/google'
 
-const ibmPlexSans = IBM_Plex_Sans({
-  weight: ['400', '500'],
-  subsets: ['latin'],
-})
+const font = 'font-[Helvetica_Neue,_Helvetica,_Arial,_sans-serif]'
 
-export default function CustomLayout() {
-  const [width, setWidth] = useState(90)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY
-      const maxScroll = window.innerHeight // Adjust this value to control how much scroll is needed for full expansion
-      const newWidth = Math.min(90 + (scrollPosition / maxScroll) * 10, 100) // Expand from 90 to 100
-      setWidth(newWidth)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
+export default function Page() {
   return (
-    <html lang="en" className="bg-[#f5f5f5]">
-      <body className="min-h-screen bg-[#f5f5f5]">
-        <header className="flex flex-col items-center pt-10">
-            <p className="absolute left-4 text-left text-l font-medium text-[#676767] font-[Helvetica_Neue,_Helvetica,_Arial,_sans-serif] tracking-[-.04em] leading-[.876]">APPLIED NEW WORLDS</p>
-          <p className="text-l font-medium text-[#676767] mb-1 font-[Helvetica_Neue,_Helvetica,_Arial,_sans-serif] tracking-[-.04em] leading-[.876]">
-            VIÑA DEL MAR 
-            <span className="font-light"> CL</span>
-          </p>
-          <Clock />
-        </header>
-        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-0 bg-[#f5f5f5]">
-          {/* Hero/Header Section */}
-          <section className="flex flex-col items-center mx-10">
-          {/* h-[90vh]  */}
-          {/* <h1 className="mt-20 flex flex-col text-8xl font-medium font-[Helvetica_Neue] text-[#FF5C00] mr-3 text-left tracking-[-.03em] leading-[.876]">
-              APPLIED <br></br>NEW <br></br> WORLDS
-            </h1>
-            <p className="mt-20 w-[45%] text-l text-left text-gray-600 font-[Helvetica_Neue] tracking-[-.02em] leading-[.876]">
-              Applied New Worlds is an early-stage Research studio focused on brain-inspired Artificial Intelligence models.
-            </p>  */}
+    <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen min-h-screen bg-[#f5f5f5]">
+      <header className="flex flex-col items-center pt-10">
+        <p className={`text-l font-medium text-[#676767] mb-1 ${font} tracking-[-.04em] leading-[.876]`}>
+          VIÑA DEL MAR
+          <span className="font-light"> CL</span>
+        </p>
+        <Clock />
+      </header>
 
-            
-            
-            {/* <p className="mt-4 text-xl text-center text-gray-600 hover:text-[#FF5C00] cursor-pointer group flex items-center gap-2">
-              GET A SITE DESIGN <span className="text-2xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">↗</span>
-            </p>  */}
-            <img 
-                src="/images/v2.png" 
-                alt="Clouds"
-                className="mt-10 mb-10 w-full h-auto rounded-3xl"
-              />
-              
-          </section>
-          
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#f5f5f5]">
+        <section className={`mx-auto max-w-2xl pt-16 pb-20 ${font}`}>
+          <h1 className="text-3xl sm:text-4xl font-medium text-[#292929] tracking-[-.03em] leading-[1.1]">
+            Applied New Worlds
+          </h1>
 
-          {/* Additional sections as needed */}
-        </div>
-      </body>
-    </html>
+          <div className="mt-10 space-y-5 text-[#676767] text-base sm:text-lg tracking-[-.02em] leading-[1.5]">
+            <p>
+              Somewhere between code and the clouds, ideas take form for
+              someone else.
+            </p>
+            <p>
+              Applied New Worlds is a studio for research, software, and digital
+              creation.
+            </p>
+            <p>
+              We work with technical ideas that are still becoming clear:
+              prototypes, tools, interfaces, demos, and systems for thinking.
+            </p>
+            <p>
+              We believe technology is a way of exploring, expressing, and
+              transforming what people can understand, share, and build
+              together.
+            </p>
+          </div>
+
+          <div className="mt-14 space-y-5 text-[#676767] text-base sm:text-lg tracking-[-.02em] leading-[1.5]">
+            <p>
+              The studio sits between science, art, business, and AI. We are
+              interested in how ideas become models, how models become tools,
+              and how tools change the way people move through the world.
+            </p>
+            <p>
+              For projects that need a product, a story, or a working sketch
+              before anyone can say what they are. We build in that early space.
+            </p>
+          </div>
+
+          <div className="mt-14 space-y-5 text-[#676767] text-base sm:text-lg tracking-[-.02em] leading-[1.5]">
+            <p className="text-[#292929] italic">Worldlines Sprint</p>
+            <p>
+              A 2-3 week creative/technical sprint for founders, researchers,
+              and small teams working on AI/software ideas that are not fully
+              clear yet.
+            </p>
+            <p>
+              We help decide what to build first, then turn it into a demo,
+              prototype, workflow, interface, tool, or narrative that can be
+              shown, tested, and developed further.
+            </p>
+          </div>
+
+          <div className="mt-14 text-[#676767] text-base sm:text-lg tracking-[-.02em] leading-[1.5]">
+            <p>
+              If you are building something new and trying to make it clearer,
+              more useful, or more real, we would like to see it.
+            </p>
+            <a
+              href="https://linkedin.com/in/nicosquiroz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 text-[#292929] hover:text-[#FF5C00] transition-colors group"
+            >
+              <span className="text-lg tracking-[-.02em]">Let&apos;s talk</span>
+              <span className="ml-2 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                ↗
+              </span>
+            </a>
+          </div>
+        </section>
+
+        <section className="mx-[1%] pb-16">
+          <img
+            src="/images/v2.png"
+            alt="Applied New Worlds"
+            className="w-full h-auto rounded-3xl"
+          />
+        </section>
+      </div>
+    </div>
   )
 }
