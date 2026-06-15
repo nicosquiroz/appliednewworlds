@@ -25,10 +25,10 @@ export default function Page() {
               someone else.
             </p>
             <p>
-              Applied New Worlds is a small studio for research, software, and
-              digital creation. We work with technical ideas that are still
-              becoming clear: prototypes, tools, interfaces, demos, and systems
-              for thinking.
+              Applied New Worlds is a studio for research, software, and digital
+              creation. We work with technical ideas that are still becoming
+              clear: prototypes, tools, interfaces, demos, and systems for
+              thinking.
             </p>
             <p>
               We believe technology is not only infrastructure. It is a way of

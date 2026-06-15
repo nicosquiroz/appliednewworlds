@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     template: '%s | Applied New Worlds',
   },
   description:
-    'A small studio for research, software, and digital creation.',
+    'A studio for research, software, and digital creation.',
   openGraph: {
     title: 'Applied New Worlds',
     description:
-      'A small studio for research, software, and digital creation.',
+      'A studio for research, software, and digital creation.',
     url: baseUrl,
     siteName: 'Applied New Worlds',
     locale: 'en_US',
