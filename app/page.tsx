@@ -16,44 +16,44 @@ export default function Page() {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#f5f5f5]">
         <section className={`mx-auto max-w-2xl pt-16 pb-20 ${font}`}>
           <h1 className="text-3xl sm:text-4xl font-medium text-[#292929] tracking-[-.03em] leading-[1.1]">
-            Interfaces for complex ideas.
+            Applied New Worlds
           </h1>
 
           <div className="mt-10 space-y-5 text-[#676767] text-base sm:text-lg tracking-[-.02em] leading-[1.5]">
             <p>
-              I work with founders, teams, and researchers to turn difficult
-              technology into something people can use and understand —
-              prototypes, internal tools, AI systems, demos, narratives,
-              interfaces.
+              Somewhere between code and the clouds, ideas take form for
+              someone else.
             </p>
             <p>
-              Not websites alone. Not AI alone. Not design alone.
+              Applied New Worlds is a small studio for research, software, and
+              digital creation. We work with technical ideas that are still
+              becoming clear: prototypes, tools, interfaces, demos, and systems
+              for thinking.
             </p>
             <p>
-              Often the challenge isn&apos;t missing a page. It&apos;s that the
-              thing doesn&apos;t have a form yet.
+              We believe technology is not only infrastructure. It is a way of
+              exploring, expressing, and transforming what a group of people can
+              understand together.
             </p>
           </div>
 
           <div className="mt-14 space-y-5 text-[#676767] text-base sm:text-lg tracking-[-.02em] leading-[1.5]">
             <p>
-              My background is physics, AI, software, and design. I consult on
-              AI and software for large companies, and I&apos;m building{' '}
-              <span className="text-[#292929]">Applied New Worlds</span> /{' '}
-              <span className="text-[#292929]">Worldlines</span> — a
-              research studio around intelligence, world models, and how
-              complex systems become legible.
+              The studio sits between science, art, business, and AI. We are
+              interested in how ideas become models, how models become tools,
+              and how tools change the way people move through the world.
             </p>
             <p>
-              I&apos;m taking a small number of projects that are technically
-              ambitious, conceptually unusual, or hard to explain.
+              Some projects need a product. Some need a story. Some need a
+              working sketch before anyone can say what they are. We build in
+              that early space.
             </p>
           </div>
 
           <div className="mt-14 text-[#676767] text-base sm:text-lg tracking-[-.02em] leading-[1.5]">
             <p>
-              If you&apos;re building something like that and want to make it
-              clearer, more usable, or more real — I&apos;d like to see it.
+              If you are building something new and trying to make it clearer,
+              more useful, or more real, we would like to see it.
             </p>
             <a
               href="https://linkedin.com/in/nicosquiroz"
