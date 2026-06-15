@@ -26,14 +26,16 @@ export default function Page() {
             </p>
             <p>
               Applied New Worlds is a studio for research, software, and digital
-              creation. We work with technical ideas that are still becoming
-              clear: prototypes, tools, interfaces, demos, and systems for
-              thinking.
+              creation.
             </p>
             <p>
-              We believe technology is not only infrastructure. It is a way of
-              exploring, expressing, and transforming what a group of people can
-              understand together.
+              We work with technical ideas that are still becoming clear:
+              prototypes, tools, interfaces, demos, and systems for thinking.
+            </p>
+            <p>
+              We believe technology is a way of exploring, expressing, and
+              transforming what people can understand, share, and build
+              together.
             </p>
           </div>
 
@@ -44,9 +46,23 @@ export default function Page() {
               and how tools change the way people move through the world.
             </p>
             <p>
-              Some projects need a product. Some need a story. Some need a
-              working sketch before anyone can say what they are. We build in
-              that early space.
+              Projects that need a product, a story, or a working sketch before
+              anyone can say what they are. We build in that early space.
+            </p>
+          </div>
+
+          <div className="mt-14 space-y-5 text-[#676767] text-base sm:text-lg tracking-[-.02em] leading-[1.5]">
+            <p className="text-[#292929] italic">Current offer</p>
+            <p>
+              <em className="text-[#292929]">Worldlines</em> Sprint is a 2-3
+              week creative/technical sprint for founders, researchers, and
+              small teams working on AI/software ideas that are not fully clear
+              yet.
+            </p>
+            <p>
+              We help decide what to build first, then turn it into a demo,
+              prototype, workflow, interface, tool, or narrative that can be
+              shown, tested, and developed further to get the project moving.
             </p>
           </div>
 
@@ -61,7 +77,7 @@ export default function Page() {
               rel="noopener noreferrer"
               className="inline-block mt-6 text-[#292929] hover:text-[#FF5C00] transition-colors group"
             >
-              <span className="text-lg tracking-[-.02em]">Conversemos</span>
+              <span className="text-lg tracking-[-.02em]">Let&apos;s talk</span>
               <span className="ml-2 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                 ↗
               </span>
