@@ -120,10 +120,12 @@ export function CustomMDX(props) {
     <MDXRemote
       {...props}
       components={{ ...components, ...(props.components || {}) }}
-      // Añadir los plugins remarkMath y rehypeKatex para procesar el contenido
-      mdxOptions={{
-        remarkPlugins: [remarkMath],  // Para procesar $latex$ en línea
-        rehypePlugins: [rehypeKatex],  // Para procesar $$latex$$ en bloque
+      options={{
+        blockJS: false,
+        mdxOptions: {
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
+        },
       }}
     />
   )
